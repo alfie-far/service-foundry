@@ -1,16 +1,16 @@
 {
   "scripts": {
     "typecheck": "tsc -p tsconfig.app.json --noEmit",
-    "dev:up": "npx sst dev",
-    "dev:down": "npx sst remove"
+    "dev": "sst dev --stage sandbox",
+    "remove:sandbox": "sst remove --stage sandbox"
   },
   "dependencies": {
     "sst": "4.15.2"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.161",
-    "@types/node": "^25.9.1",
-    "typescript": "^6.0.3",
+    "@types/node": "^22.19.19",
+    "typescript": "^5.9.3",
     "vitest": "^4.1.8"
   }
 }

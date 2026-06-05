@@ -1,12 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
     "strict": true,
-    "skipLibCheck": true,
-    "ignoreDeprecations": "6.0",
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
