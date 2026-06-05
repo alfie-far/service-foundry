@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.app.json --noEmit"
+  },
   "dependencies": {
     "sst": "4.15.2"
   },
