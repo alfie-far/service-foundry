@@ -9,5 +9,16 @@ export default $config({
       home: "aws",
     };
   },
-  async run() {},
+  async run() {
+
+      const api = new sst.aws.ApiGatewayV2("TaskApi");
+      api.route("GET /health", {
+        handler: "apps/task-api/src/handlers/health.handler"
+      });
+
+      return {
+        api: api.url
+      };
+      
+  },
 });
