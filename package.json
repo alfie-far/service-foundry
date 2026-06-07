@@ -2,7 +2,10 @@
   "scripts": {
     "typecheck": "tsc -p tsconfig.app.json --noEmit",
     "dev": "sst dev --stage sandbox",
-    "remove:sandbox": "sst remove --stage sandbox"
+    "remove:sandbox": "sst remove --stage sandbox",
+    "test": "vitest run",
+    "test:integration": "./scripts/test-integration.sh",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "sst": "4.15.2"

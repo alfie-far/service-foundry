@@ -6,10 +6,6 @@
 
 declare module "sst" {
   export interface Resource {
-    "TaskApi": {
-      "type": "sst.aws.ApiGatewayV2"
-      "url": string
-    }
   }
 }
 
